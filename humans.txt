@@ -1,0 +1,15 @@
+/*TEAM*/
+
+UI: 蚊子
+web前端: 蚊子
+后台: Wordpress
+站点: http://wenzhi1899.com
+
+/*THANKS*/
+网站建立：http://study.163.com/course/courseMain.htm?courseId=582007
+
+网页制作：http://www.imooc.com
+
+wordpress主题制作：http://edu.51cto.com/course/course_id-929.html
+
+
