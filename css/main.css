@@ -1,0 +1,514 @@
+/**********************************
+*  页面样式
+ **********************************/
+
+/* ========================
+   基本默认值	
+ ========================= */
+
+html{
+	font-size:20px;
+	color:#222;
+	font-family: "Microsoft YaHei","黑体","宋体",sans-serif;
+}
+:selection{
+	background-color:#b3d4fc;
+	text-shadow:none;
+}
+ul{
+	padding:0;
+	margin:0;
+}
+li{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+h1,h2,h3,h4,h5,h6,p{
+	padding:0;
+	margin:0;
+}
+input{
+	outline:none;
+}
+button{
+	outline:none;
+} 
+/*工具样式*/
+
+.center-block{
+	display:block;
+	margin-right:auto;
+	margin-left:auto;
+}
+.fr{
+	float:right !important;
+}
+.fl{
+	float:left !important;
+}
+.hide{
+	display:none !important;
+}
+.show{
+	display:block !important;
+}
+
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after{
+	content:"";
+	display:table;
+}
+.clearfix:after{
+	clear:both;
+}
+/*公共样式开始*/
+.hr{
+	width:48%;
+	height:.1rem;
+	background-color:#222;
+	margin:0.3rem auto;
+}
+/*公共样式结束*/
+
+
+
+/*声明字体矢量库*/
+@font-face {
+	font-family: 'iconfont';
+    src: url('icon/iconfont.eot'); /* IE9*//*-> IE6-IE8 */ /*-> chrome、firefox */ /* ->chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    src: url('icon/iconfont.eot?#iefix') format('embedded-opentype'), 
+    url('icon/iconfont.woff') format('woff'), 
+    url('icon/iconfont.ttf') format('truetype'),
+    url('icon/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+/*浏览器更新提示*/
+.browseupgrade{
+	background: #ccc;
+	font-size:16.875px;
+	text-align: center;
+}
+/*自定义页面样式*/
+body{
+	font-size:0.8rem;
+	font-size:16px;
+	background-image:url(http://ogif1wslw.bkt.clouddn.com/bgimg.png);
+}
+.iconfont{
+	font-family:"iconfont";
+	font-size:16px;
+	font-style:normal;
+}
+header{
+	height:3rem;
+	width:100%;
+	box-sizing: border-box;
+	background: rgba(68,68,68,0);
+}
+.on{
+	height:3rem;
+	width:100%;
+	box-sizing: border-box;
+	background: rgba(68,68,68,.9);
+}
+header .top{
+	width:85%;
+	height:3rem;
+	margin:0 auto;
+}
+header .top .logo{
+	display:inline-block;
+	width:20%;
+	height:3rem;
+	line-height:3rem;
+	padding-left: 1rem;
+}
+header .top .logo .logo-image{
+	width:20%;
+	padding:.7rem 0 0;
+}
+header .top .logo .logo-name{
+	width:70%;
+	font-size: .9rem;
+	color:#eee;
+}
+header .top .logo .logo-name .hover{
+	color:#07ADEC;
+}
+header .top .top-right{
+	width:76%;
+}
+header .top .top-right .nav{
+	width:70%;
+	height:3rem;
+}
+header .top .top-right .nav .navbar{
+	width:100%;
+	height:3rem;
+	line-height:3rem;
+}
+header .top .top-right .nav .navbar-list{
+	display:inline-block;
+	font-size:0.8rem;
+	width:16.4%;
+	height:3rem;
+	text-align: center;
+}
+header .top .nav .navbar-list a{
+	display: block;
+	color:#eee;
+}
+header .top .nav .navbar-list a.hover,header .top .nav .navbar-list a.active{
+	color:#07a4de;
+	font-weight: bold;
+	background: rgba(68,68,68,1);
+}
+header .top .top-right .share-list{
+	width:20%;
+	height:3rem;
+}
+header .top .top-right .share-list .share-list-icon{
+	width:25%;
+	height:3rem;
+	line-height:3rem;
+}
+header .top .top-right .share-list .share-list-icon a{
+	display: block;
+	height:3rem;
+	color:#eee;
+	text-align:center;
+	line-height:3rem;
+}
+header .top .top-right .share-list .share-list-icon i{
+	font-size:1.2rem;
+}
+header .top .top-right .share-list .share-list-icon .hover{
+	display:block;
+	color:#07a4de;
+	background:rgba(68,68,68,1);
+}
+/*导航栏下拉菜单开始*/
+
+/*导航栏下拉菜单结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*首页中部主要内容开始*/
+.section{
+	width:85%;
+	margin:0 auto;
+	border:1px solid blue;
+}
+.section .content-box{
+	width:75%;
+}
+.section .content{
+	width:100%;
+	padding:2rem 0 0;
+	box-sizing: border-box;
+}
+
+.section .content .content-more{
+	position: relative;
+	top:-0.5rem;
+	left:85%;
+	width:4.5rem;
+	height:1.2rem;
+	line-height:1.2rem;
+	border-radius:.4rem;
+	background:#333366;
+	box-shadow: 3px 3px 3px #006699;
+}
+.section .content .content-more a{
+	font-size:0.7rem;
+	color:#eee;
+}
+.section .content .section-title,.section .content .section-smalltitle{
+	font-weight: 580;
+	text-align: center;
+	color:#222;
+}
+.section .content .section-title{
+	font-size:1rem;
+	letter-spacing: 0.3rem;
+	
+}
+.section .content .section-smalltitle{
+	font-size:0.8rem;
+	text-indent: 10rem;
+	color:#949395;
+	margin-bottom:0.5rem;
+}
+.section .content .note{
+	padding:0.5rem;
+}
+.section .content .note .note-box{
+	width:48%;
+	height:16rem;
+	border:1px solid #333;
+	border-radius:0.2rem;
+	margin:0 0 0.6rem 0.6rem;
+	box-shadow: 3px 3px 5px #222;
+}
+.section .content .note .note-box .article-header{
+	height:45%;
+	width:100%;
+	border-radius: 0.2rem 0.2rem 0 0;
+ }
+ /*待替换*/
+.section .content .note .note-box .article-header span{
+	display: block;
+	height:100%;
+	width:100%;
+	background:url(../images/view.jpg);
+	border-radius: 0.2rem 0.2rem 0 0;
+	
+}
+
+
+ .section .content .note .note-box .article-box{
+ 	background:#eee;
+ 	position:relative;
+ 	border-radius: 0 0 0.2rem 0.2rem;
+ }
+.section .content .note .note-box .article-box .article-title{
+	width:100%;
+	padding:0.5rem 0;
+	font-weight: 400;
+	text-align:center;
+}
+.section .content .note .note-box .article-box .article-time{
+	padding-right:1rem;
+	text-align:right;
+	font-size:0.6rem;
+	color:#333;
+}
+.section .content .note .note-box .article-box .article-content{
+	padding:0.2rem 1rem;
+	font-size:0.7rem;
+	text-indent:1.4rem;
+	line-height:1.2rem;
+	position:relative;
+	height:4.8rem;
+    overflow:hidden;
+}
+.section .content .note .note-box .article-box .article-content:after {
+    content:"...";
+    font-weight:bold;
+    color:#222;
+    position:absolute;
+    bottom:0;
+    right:1rem;
+    box-sizing: border-box;
+    padding:0 0rem 0.3rem;
+    background:#eee;
+}
+.section .content .note .note-box .article-box .article-more{
+	background:#535352;
+	display:block;
+	width:3.8rem;
+	height:0.6rem;
+	padding:0.2rem;
+	line-height:0.5rem;
+	position:relative;
+	left:75%;
+	border-radius: 0.2rem;
+} 
+.section .content .note .note-box .article-box .article-more a{
+	color:#eee;
+	font-size:0.6rem;
+	text-align:center;
+}
+/*首页中部主要内容结束*/
+
+
+
+
+
+
+/*首页侧边栏开始*/
+
+ /*热门文章排名开始*/
+.section .aside{
+	width:24%;
+} 
+.section .aside .aside-box{
+	width:100%;
+	border-radius: 0.5rem;
+	box-sizing: border-box;
+	border:1px solid #222;
+	background: #eee;
+	box-shadow: 0.2rem 0.2rem 0.2rem #222;
+	margin-bottom:1rem;
+}
+.section .aside .aside-box .aside-header{
+	width:100%;
+	height:2.5rem;
+	line-height:2.5rem;
+	background:#ccc;
+	border-radius: 0.5rem 0.5rem 0 0;
+}
+.section .aside .aside-box .aside-header .aside-title{
+	text-align: center;
+	font-weight: 450;
+	font-size:0.8rem;
+	color:#666;
+}
+.section .aside .aside-box .aside-article{
+	padding:1rem;
+}
+
+.section .aside .aside-hot{
+	margin-top:1rem;
+}
+
+.section .aside .aside-hot .aside-article .aside-list li{
+	height:1.5rem;
+	border-bottom:1px dotted #ccc;
+	padding-left:0.5rem;
+	line-height:1.5rem;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.section .aside .aside-hot .aside-article .aside-list li:nth-child(10){
+	padding-left:0;
+}
+
+.section .aside .aside-hot .aside-article .aside-list li span{
+	display: inline-block;
+	width:1rem;
+	height:1rem;
+	text-align: center;
+}
+.section .aside .aside-hot .aside-article .aside-list li:nth-child(1) a{
+	color:#f00;
+}
+.section .aside .aside-hot .aside-article .aside-list li:nth-child(2) a{
+	color:#003cff;
+}
+.section .aside .aside-hot .aside-article .aside-list li:nth-child(3) a{
+	color:#00ffaa;
+}
+.section .aside .aside-hot .aside-article .aside-list li a:hover{
+	font-weight:700;
+	color:#57d2f7;
+}
+/*热门文章排名结束*/
+
+/*搜索开始*/
+.section .aside .aside-search{
+	padding:0.2rem;
+}
+.section .aside .aside-search .aside-search-text{
+	border:1px solid #ccc;
+	width:75%;
+	height:2rem;
+	background: #fff;
+	border-radius: 0.3rem;
+	color:#aaa;
+}
+.section .aside .aside-search .aside-search-btn{
+	width:20%;
+	height:2.1rem;
+	border-right:2px outset;
+	border-bottom:2px outset;
+	border-radius: 0.3rem;
+	cursor:pointer;
+	color:#555;
+}
+/*搜索结束*/
+
+
+
+
+
+
+/*首页侧边栏结束*/
+
+
+
+/*底部开始*/
+footer{
+	height:5rem;
+	width:100%;
+	font-size:0.7rem;
+	line-height:1rem;
+	background:#666;
+}
+footer .foot-wrap{	
+	width:85%;
+	height:5rem;
+	margin:0 auto;
+}
+footer .foot-wrap .foot-top{
+	width:100%;
+	height:4rem;
+}
+footer .foot-wrap .foot-top .foot-info{
+	width:28%;
+	height:3rem;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	margin:0.5rem 0.8rem;
+}
+footer .foot-wrap .foot-top .foot-info .state{
+	color:#bbb;
+}
+footer .foot-wrap .foot-top .foot-link{
+	width:65%;
+	height:3.4rem;
+	padding:0.3rem .5rem;
+}
+footer .foot-wrap .foot-top .foot-link .friend-web{
+	font-size:0.8rem;
+	color:#eee;
+}
+footer .foot-wrap .foot-top .foot-link .link-name{
+	display:inline-block;
+	padding:0.1rem 0.3rem;
+}
+footer .foot-wrap .foot-top .foot-link .link-name a{
+	color:#ccc;
+}
+footer .foot-wrap .foot-top .foot-link .link-name a:hover{
+	color:#fff;
+}
+footer .foot-wrap .foot-bottom{
+	width:100%;
+	height:1rem;
+	color:#333;
+}
+footer .foot-wrap .foot-bottom .copyright{
+	width:60%;
+	height:1rem;
+}
+footer .foot-wrap .foot-bottom .copyright .title{
+	text-indent: 1rem;
+
+}
+footer .foot-wrap .foot-bottom .web-time{
+	width:35%;
+	height:1rem;
+}
+footer .foot-wrap .foot-bottom .web-time .number{
+	display: inline-block;
+	margin-right:1rem;  
+}
+
+/*底部结束
